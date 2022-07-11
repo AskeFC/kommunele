@@ -246,6 +246,20 @@ section li.correct i::before {
     margin-left: -2rem;
     filter: hue-rotate(90deg) saturate(90%) brightness(0.6);
 }
+#guessList li {
+    display: block;
+    height: 2rem; /* Final height after animation */
+    overflow: hidden;
+    animation: growtext .3s ease-in-out;
+}
+
+
+/* Animation keyframes */
+
+@keyframes growtext {
+    from {height: 0;}
+    to {height: 2rem;}
+}
 @-o-keyframes shake {
     0% { transform: translate(1.875rem); }
     20% { transform: translate(-1.875rem); }
