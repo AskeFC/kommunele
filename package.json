@@ -15,7 +15,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
+    "nodestart": "node app.js",
+    "bunstart": "bun app.js",
     "dev": "nodemon app.js"
   },
   "license": "ISC",
