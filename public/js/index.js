@@ -88,6 +88,10 @@
 
         const municipalityListElm = d.querySelector('#municipalityList'),
             todayString = (new Date()).toLocaleDateString('ko-kr', {year: 'numeric', month: '2-digit', day: '2-digit'}).replaceAll('.', '').replaceAll(' ', ''),
+/*            todayDate = new Date(),
+            todayString = (new Intl.DateTimeFormat('da-DK', { year: 'numeric' }).format(todayDate)) +
+                (new Intl.DateTimeFormat('da-DK', { month: '2-digit' }).format(todayDate)) +
+                (new Intl.DateTimeFormat('da-DK', { day: '2-digit' }).format(todayDate)).replace('.', ''),*/
             initData = [
                 getter('/data/date_list.json', (out) => {
                     // Set the municipality image.
